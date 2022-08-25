@@ -1,0 +1,37 @@
+// .clients {
+//     padding: 94px 0;
+// }
+// .clients__list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+// .client-brand__link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid var(--icon-color);
+//     border-radius: 4px;
+//     background-color: var(--contrasting-color);
+
+//     transition: background-color var(--transition-dur-and-func),
+//         border var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         border: 1px solid var(--accent-color);
+//         border-radius: 4px;
+//     }
+// }
+// .client-brand__icon {
+//     fill: var(--icon-color);
+
+//     transition: fill var(--transition-dur-and-func);
+
+//     .client-brand__link:hover &,
+//     .client-brand__link:focus & {
+//         fill: var(--accent-color);
+//     }
+// }

@@ -1,0 +1,187 @@
+// .contacts {
+//     max-width: 1600px;
+//     margin: auto;
+//     background: #2f303a;
+// }
+// .contacts-footer__logo {
+//     margin-top: 60px;
+//     margin-bottom: 20px;
+// }
+
+// .logo__studio--white {
+//     font-family: var(--secondary-font);
+//     @include font(26px, 700, 31px);
+//     letter-spacing: 0.03em;
+//     color: var(--contrasting-color);
+// }
+
+// .contacts-footer__list {
+//     margin-right: 70px;
+//     margin-bottom: 60px;
+// }
+
+// .contacts-footer__address {
+//     @include font(14px, 400, 24px);
+//     font-style: normal;
+//     letter-spacing: 0.03em;
+//     color: var(--contrasting-color);
+
+//     transition: color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+// .contacts-footer__mail {
+//     padding-top: 9px;
+//     @include font(14px, 400, 24px);
+//     font-style: normal;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+
+//     transition: color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+// .contacts-footer__phone {
+//     padding-top: 9px;
+//     @include font(14px, 400, 24px);
+//     font-style: normal;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+
+//     transition: color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+// .social-footer__title {
+//     @include font(14px, 700, 16px);
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--contrasting-color);
+// }
+
+// .social-footer__list {
+//     margin-top: 20px;
+//     display: flex;
+//     gap: 10px;
+// }
+// .social-footer__link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     background-color: rgba(255, 255, 255, 0.1);
+
+//     transition: background-color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--accent-color);
+//     }
+// }
+
+// .social-footer__icon {
+//     fill: var(--contrasting-color);
+
+//     transition: fill var(--transition-dur-and-func);
+
+//     .social-footer__link:hover &,
+//     .social-footer__link:focus & {
+//         fill: var(--contrasting-color);
+//     }
+// }
+
+// .social-footer {
+//     margin-top: 72px;
+// }
+// .container.contacts-footer {
+//     display: flex;
+// }
+// .subscription-form {
+//     margin-top: 72px;
+//     margin-left: 93px;
+//     display: flex;
+//     flex-direction: column;
+// }
+// .subscription-form__input-box {
+//     display: flex;
+// }
+// .subscription-form__title {
+//     margin-bottom: 20px;
+//     font-style: normal;
+//     @include font(14px, 700, 16px);
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+
+//     color: var(--contrasting-color);
+// }
+// .subscription-form__input {
+//     margin-right: 12px;
+//     width: 360px;
+//     height: 50px;
+//     padding-left: 16px;
+//     font-style: normal;
+//     @include font(16px, 400, 20px);
+//     letter-spacing: 0.03em;
+//     color: var(--contrasting-color);
+//     background-color: transparent;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+
+//     transition: border var(--transition-dur-and-func);
+
+//     &:focus {
+//         outline: none;
+//         border: 1px solid #188ce8;
+//     }
+
+//     &::placeholder {
+//         display: flex;
+//         align-items: center;
+//         font-style: normal;
+//         @include font(16px, 400, 20px);
+//         letter-spacing: 0.03em;
+//         color: rgba(255, 255, 255, 0.6);
+//     }
+// }
+
+// .subscription-form__btn {
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     padding-left: 29px;
+//     padding-right: 28px;
+//     min-width: 200px;
+//     height: 50px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     font-style: normal;
+//     @include font(16px, 700, 30px);
+//     color: var(--contrasting-color);
+//     background: var(--accent-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+
+//     transform: background var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         background-color: #188ce8;
+//     }
+// }

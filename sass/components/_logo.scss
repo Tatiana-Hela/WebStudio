@@ -1,0 +1,28 @@
+@media screen and (max-width: 1199px) {
+    .logo {
+        font-family: var(--secondary-font);
+        font-style: normal;
+        @include font(24px, 700, 28px);
+        letter-spacing: 0.03em;
+
+        color: var(--accent-color);
+    }
+    .logo__studio {
+        color: var(--secondary-font-color);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .logo {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 93px;
+        font-family: var(--secondary-font);
+        font-style: normal;
+        @include font(26px, 700, 31px);
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
+    }
+    .logo__studio {
+        color: var(--secondary-font-color);
+    }
+}
