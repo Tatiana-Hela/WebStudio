@@ -20,7 +20,7 @@
     <body>
         <!-- HEADER -->
         <header class="page-header">
-            <div class="page-header-container container">
+            <div class="page-header-container page-header--border container">
                 <nav class="page-nav">
                     <a href="./index.html" class="logo link" lang="en"
                         >Web<span class="logo__studio">Studio</span>
@@ -133,18 +133,23 @@
                         <ul class="mobile-menu__social list">
                             <li class="mobile-menu__social-item">
                                 <a class="mobile-menu__social-link link" href=""
-                                    >Instagram</a
-                                >
+                                    >Instagram </a
+                                ><span
+                                    class="mobile-menu__social-symbol"
+                                ></span>
                             </li>
                             <li class="mobile-menu__social-item">
                                 <a class="mobile-menu__social-link link" href=""
-                                    >Twitter</a
-                                >
+                                    >Twitter </a
+                                ><span
+                                    class="mobile-menu__social-symbol"
+                                ></span>
                             </li>
                             <li class="mobile-menu__social-item">
                                 <a class="mobile-menu__social-link link" href=""
                                     >Facebook</a
                                 >
+                                <span class="mobile-menu__social-symbol"></span>
                             </li>
                             <li class="mobile-menu__social-item">
                                 <a class="mobile-menu__social-link link" href=""
@@ -157,7 +162,7 @@
             </div>
         </header>
         <!-- HERO -->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container container-hero">
                 <h1 class="hero-title">
                     Эффективные решения <br />
@@ -167,9 +172,9 @@
                     Заказать услугу
                 </button>
             </div>
-        </section> -->
+        </section>
         <!-- ABOUT -->
-        <!-- <section class="about">
+        <section class="about">
             <div class="container">
                 <h2 class="visually-hidden">преимущества</h2>
                 <ul class="about__menu list">
@@ -249,9 +254,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- WORK -->
-        <!-- <section class="work">
+        <section class="work">
             <div class="container container-work">
                 <h2 class="work__title title">Чем мы занимаемся</h2>
                 <ul class="work__menu list">
@@ -302,20 +307,41 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- TEAM -->
-        <!-- <section class="team">
+        <section class="team">
             <div class="container">
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="team__menu list">
                     <li class="team__card">
-                        <img
-                            class="team__photo"
-                            src="./images/team/игорь-демьяненко.jpg"
-                            alt="игорь-демьяненко"
-                            width="270"
-                            height="260"
-                        />
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team/игорь-демьяненко-desktop.jpg    1x,
+                                    ./images/team/игорь-демьяненко-desktop@2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/team/игорь-демьяненко-tablet.jpg    1x,
+                                    ./images/team/игорь-демьяненко-tablet@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/team/игорь-демьяненко-mobile.jpg    1x,
+                                    ./images/team/игорь-демьяненко-mobile@2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            />
+                            <img
+                                class="team__photo"
+                                src="./images/team/игорь-демьяненко-mobile.jpg"
+                                alt="игорь-демьяненко"
+                            />
+                        </picture>
                         <div class="team__box">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__function" lang="en">
@@ -378,13 +404,30 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img
-                            class="team__photo"
-                            src="./images/team/ольга-репина.jpg"
-                            alt="ольга-репина"
-                            width="270"
-                            height="260"
-                        />
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team/ольга-репина-desktop.jpg    1x,
+                                    ./images/team/ольга-репина-desktop@2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="
+                                    ./images/team/ольга-репина-tablet.jpg    1x,
+                                    ./images/team/ольга-репина-tablet@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)" />
+                            <source
+                                srcset="
+                                    ./images/team/ольга-репина-mobile.jpg    1x,
+                                    ./images/team/ольга-репина-mobile@2x.jpg 2x
+                                "
+                                media="(max-width: 767px)" />
+                            <img
+                                class="team__photo"
+                                src="./images/team/ольга-репина-mobile.jpg"
+                                alt="ольга-репина"
+                        /></picture>
                         <div class="team__box">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__function" lang="en">
@@ -447,13 +490,30 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img
-                            class="team__photo"
-                            src="./images/team/николай-тарасов.jpg"
-                            alt="николай-тарасов"
-                            width="270"
-                            height="260"
-                        />
+                        <picture
+                            ><source
+                                srcset="
+                                    ./images/team/николай-тарасов-desktop.jpg    1x,
+                                    ./images/team/николай-тарасов-desktop@2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="
+                                    ./images/team/николай-тарасов-tablet.jpg    1x,
+                                    ./images/team/николай-тарасов-tablet@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)" />
+                            <source
+                                srcset="
+                                    ./images/team/николай-тарасов-mobile.jpg    1x,
+                                    ./images/team/николай-тарасов-mobile@2x.jpg 2x
+                                "
+                                media="(max-width: 767px)" />
+                            <img
+                                class="team__photo"
+                                src="./images/team/николай-тарасов-mobile.jpg"
+                                alt="николай-тарасов"
+                        /></picture>
                         <div class="team__box">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__function" lang="en">Marketing</p>
@@ -514,13 +574,30 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img
-                            class="team__photo"
-                            src="./images/team/михаил-ермаков.jpg"
-                            alt="михаил-ермаков"
-                            width="270"
-                            height="260"
-                        />
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team/михаил-ермаков-desktop.jpg    1x,
+                                    ./images/team/михаил-ермаков-desktop@2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="
+                                    ./images/team/михаил-ермаков-tablet.jpg    1x,
+                                    ./images/team/михаил-ермаков-tablet@2x.jpg 2x
+                                "
+                                media="(min-width: 768px)" />
+                            <source
+                                srcset="
+                                    ./images/team/михаил-ермаков-mobile.jpg    1x,
+                                    ./images/team/михаил-ермаков-mobile@2x.jpg 2x
+                                "
+                                media="(max-width: 767px)" />
+                            <img
+                                class="team__photo"
+                                src="./images/team/михаил-ермаков-mobile.jpg"
+                                alt="михаил-ермаков"
+                        /></picture>
                         <div class="team__box">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__function" lang="en">UI Designer</p>
@@ -582,12 +659,12 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Clients -->
-        <!-- <section>
+        <section>
             <div class="clients container">
                 <h2 class="clients__title title">Постоянные клиенты</h2>
-                <ul class="clients__list list">
+                <ul class="clients__list list container">
                     <li class="client-brand">
                         <a href="" class="client-brand__link">
                             <svg
@@ -668,11 +745,11 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- FOOTER -->
-        <!-- <footer id="contacts" class="contacts">
+        <footer id="contacts" class="contacts">
             <div class="container contacts-footer">
-                <address>
+                <address class="contacts__address">
                     <ul class="contacts-footer__list list">
                         <li class="contacts-footer__logo">
                             <a href="./index.html" class="logo link"
@@ -783,7 +860,7 @@
                             <svg
                                 class="subscription-form__btn-icon"
                                 width="24"
-                                height="24px"
+                                height="24"
                             >
                                 <use
                                     href="./images/icons.svg#icon-icon-send"
@@ -793,9 +870,9 @@
                     </div>
                 </form>
             </div>
-        </footer> -->
+        </footer>
         <!-- Modal-Window -->
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal__close-btn" data-modal-close>
                     <svg class="modal__close-btn-icon" width="18" height="18">
@@ -873,25 +950,27 @@
                             placeholder="Введите текст"
                         ></textarea>
                     </label>
-                    <input
-                        id="user-policy"
-                        type="checkbox"
-                        name="user_policy"
-                        class="modal-form__check visually-hidden"
-                    />
-                    <label for="user-policy" class="modal-form__check-desc">
-                        Соглашаюсь с рассылкой и принимаю&nbsp;<a
-                            class="terms"
-                            href="#"
-                            >Условия договора
-                        </a>
-                    </label>
+                    <div class="modal-form_terms-box">
+                        <input
+                            id="user-policy"
+                            type="checkbox"
+                            name="user_policy"
+                            class="modal-form__check visually-hidden"
+                        />
+                        <label for="user-policy" class="modal-form__check-desc">
+                            Соглашаюсь с рассылкой и принимаю&nbsp;<a
+                                class="terms"
+                                href="#"
+                                >Условия договора
+                            </a>
+                        </label>
+                    </div>
                     <button type="submit" class="modal-form__submit">
                         Oтправить
                     </button>
                 </form>
             </div>
-        </div> -->
+        </div>
         <script src="./mobile-menu.js"></script>
         <script src="./modal.js"></script>
     </body>
