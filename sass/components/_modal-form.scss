@@ -104,8 +104,9 @@
 
 .modal-form__check-desc {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     @include font(12px, 400, 14px);
     letter-spacing: 0.03em;

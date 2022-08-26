@@ -270,8 +270,9 @@ body {
 
 .modal-form__check-desc {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   font-size: 12px;
   font-weight: 400;
@@ -319,7 +320,7 @@ body {
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  width: 90%;
   min-height: 609px;
   background-color: var(--contrasting-color);
   border-radius: 4px;
@@ -331,16 +332,16 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  background-color: transparent;
+  background-color: var(--contrasting-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
-  transition: border-color var(--transition-dur-and-func);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: fill var(--transition-dur-and-func);
 }
 
 .modal__close-btn-icon {
@@ -617,9 +618,14 @@ body {
   background-position: center;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/bg-mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/bg-mobile@2x.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/bg-tablet@2x.jpg");
   }
 }
 .container-hero {
@@ -802,21 +808,33 @@ body {
 
 .clients {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .clients__list {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
+  justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .client-brand__link {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .clients {
+    max-width: 480px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
 .client-brand__link {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  width: 210px;
+  justify-content: center;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -972,20 +990,17 @@ body {
 }
 
 .subscription-form__input {
-  width: 360px;
-  height: 50px;
-  padding-left: 16px;
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: var(--contrasting-color);
-  background-color: transparent;
+  min-width: 300px;
+  padding: 15px 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  transition: border var(--transition-dur-and-func);
+  background-color: #2f303a;
+  color: var(--contrasting-color);
+  text-indent: 16px;
+  outline-color: var(--accent-color);
+  outline-width: 0;
+  transition: border-color var(--transition-dur-and-func);
 }
 .subscription-form__input:focus {
   outline: none;
@@ -1002,6 +1017,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscription-form__input {
+    margin: 0 auto 20px;
+    width: 450px;
+  }
+}
 .subscription-form__btn {
   margin: auto;
   margin-top: 20px;
