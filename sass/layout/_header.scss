@@ -98,18 +98,38 @@
         letter-spacing: 0.02em;
         color: var(--secondary-font-color);
     }
-
     .contact {
         display: flex;
-        flex-direction: column;
+        padding: 32px 0;
+    }
+    @media screen and (max-width: 1199px) {
+        .contact {
+            flex-direction: column;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .contact {
+            display: flex;
+            margin-left: auto;
+        }
     }
     .icon-smartphone {
         fill: currentColor;
         margin-right: 8px;
     }
+
     .icon-envelope {
         fill: currentColor;
         margin-right: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        .icon-smartphone {
+            margin-right: 10px;
+        }
+        .icon-envelope {
+            margin-right: 10px;
+        }
     }
     .contact-list__mail {
         display: flex;
@@ -125,6 +145,12 @@
         &:hover,
         &:focus {
             color: var(--accent-color);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .contact-list__mail {
+            margin: 0;
+            margin-right: 30px;
         }
     }
 

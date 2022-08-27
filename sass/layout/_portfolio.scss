@@ -8,6 +8,12 @@
     margin-top: 0;
     margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+    .filter {
+        justify-content: center;
+    }
+}
+
 // .filter__button.filter__button--current {
 //     background-color: var(--accent-color);
 //     color: var(--contrasting-color);
@@ -60,10 +66,22 @@
 
 .project {
     display: flex;
-    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+@media screen and (max-width: 767px) {
+    .project {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .project {
+        justify-content: space-between;
+    }
+    .project__card {
+        width: calc((100% - 30px) / 2);
+    }
 }
 .project__title {
     margin-bottom: 4px;

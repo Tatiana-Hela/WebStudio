@@ -93,6 +93,11 @@
 
     color: var(--contrasting-color);
 }
+@media screen and (min-width: 1200px) {
+    .hero-title {
+        @include font(44px, 900, 60px);
+    }
+}
 .modal-btn {
     padding: 10px 32px;
     font-family: inherit;

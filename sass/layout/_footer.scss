@@ -1,9 +1,14 @@
 .contacts {
     padding: 60px 0;
     max-height: 603px;
-    // max-width: 1600px;
     margin: auto;
     background: #2f303a;
+}
+@media screen and (min-width: 1200px) {
+    .contacts {
+        margin: 0;
+        max-width: 1600px;
+    }
 }
 .contacts__address {
     margin-bottom: 60px;
@@ -12,10 +17,12 @@
     flex-direction: column;
     align-items: center;
 }
+
 .social-footer {
     margin: auto;
     text-align: center;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .contacts-footer {
         display: flex;
@@ -29,7 +36,26 @@
         margin: 0;
     }
 }
-
+@media screen and (min-width: 1200px) {
+    .contacts-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .social-footer {
+        margin: 0;
+    }
+    .social-footer__title {
+        text-align: left;
+    }
+    .contacts__address {
+        text-align: left;
+    }
+    .subscription-form__input-box {
+        display: flex;
+        align-items: center;
+    }
+}
 .contacts-footer__logo {
     margin-bottom: 20px;
 }
@@ -40,11 +66,6 @@
     letter-spacing: 0.03em;
     color: var(--contrasting-color);
 }
-
-// .contacts-footer__list {
-//     margin-right: 70px;
-//     margin-bottom: 60px;
-// }
 
 .contacts-footer__address {
     padding-bottom: 8px;
@@ -132,20 +153,16 @@
     }
 }
 
-// .social-footer {
-//     margin-top: 72px;
-// }
-// .container.contacts-footer {
-//     display: flex;
-// }
 .subscription-form {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
 }
-// .subscription-form__input-box {
-//     display: flex;
-// }
+@media screen and (min-width: 1200px) {
+    .subscription-form {
+        margin: 0;
+    }
+}
 .subscription-form__title {
     text-align: center;
     margin-bottom: 20px;
@@ -155,6 +172,11 @@
     text-transform: uppercase;
 
     color: var(--contrasting-color);
+}
+@media screen and (min-width: 1200px) {
+    .subscription-form__title {
+        text-align: left;
+    }
 }
 .subscription-form__input-box {
     text-align: center;
@@ -186,7 +208,11 @@
         color: rgba(255, 255, 255, 0.6);
     }
 }
-
+@media screen and (min-width: 1200px) {
+    .subscription-form__input {
+        min-width: 358px;
+    }
+}
 @media screen and (min-width: 480px) and (max-width: 1199px) {
     .subscription-form__input {
         margin: 0 auto 20px;
@@ -220,6 +246,12 @@
     &:hover,
     &:focus {
         background-color: #188ce8;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .subscription-form__btn {
+        margin-top: 0;
+        margin-left: 12px;
     }
 }
 .subscription-form__btn-icon {

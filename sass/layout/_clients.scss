@@ -1,6 +1,10 @@
 .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+    .clients {
+        padding: 94px 0;
+    }
 }
 .client-brand__link {
     display: flex;
@@ -48,18 +52,19 @@
         justify-content: center;
     }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .clients {
-        padding-bottom: 30px;
-    }
+@media screen and (min-width: 768px) {
     .clients__list {
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
         justify-content: space-between;
     }
     .client-brand__link {
-        margin-bottom: 30px;
+        width: 170px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .client-brand__link {
         width: 226px;
     }
 }

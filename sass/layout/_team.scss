@@ -2,6 +2,11 @@
     padding: 60px 0;
     background: #f5f4fa;
 }
+@media screen and (min-width: 1200px) {
+    .team {
+        padding: 94px 0;
+    }
+}
 .team__menu {
     text-align: center;
 }
@@ -32,16 +37,17 @@
         margin-bottom: 30px;
     }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .team__menu {
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
         justify-content: space-between;
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .team__card {
         width: calc((100% - 30px) / 2);
-        margin-bottom: 30px;
     }
 }
 
