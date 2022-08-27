@@ -1,13 +1,14 @@
 .contacts {
     padding: 60px 0;
+    max-width: 1600px;
     max-height: 603px;
     margin: auto;
     background: #2f303a;
 }
 @media screen and (min-width: 1200px) {
     .contacts {
-        margin: 0;
         max-width: 1600px;
+        max-height: 252px;
     }
 }
 .contacts__address {
@@ -40,7 +41,6 @@
     .contacts-footer {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
     }
     .social-footer {
         margin: 0;
