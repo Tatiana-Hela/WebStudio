@@ -4,7 +4,7 @@
     left: 50%;
     padding: 40px;
     transform: translate(-50%, -50%) scale(1);
-    width: 90%;
+    width: 450px;
     min-height: 609px;
     background-color: var(--contrasting-color);
     border-radius: 4px;
@@ -12,6 +12,11 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: box-shadow var(--transition-dur-and-func),
         transform var(--transition-dur-and-func);
+}
+@media screen and (max-width: 767px) {
+    .modal {
+        width: 90%;
+    }
 }
 
 .modal__close-btn {

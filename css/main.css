@@ -320,7 +320,7 @@ body {
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
-  width: 90%;
+  width: 450px;
   min-height: 609px;
   background-color: var(--contrasting-color);
   border-radius: 4px;
@@ -328,6 +328,11 @@ body {
   transition: box-shadow var(--transition-dur-and-func), transform var(--transition-dur-and-func);
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 90%;
+  }
+}
 .modal__close-btn {
   position: absolute;
   top: 8px;
@@ -475,6 +480,15 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 
+.menu__item:not(:first-child) {
+  padding-left: 50px;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .contact-list__phone-number {
     display: none;
@@ -498,6 +512,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    margin: 0;
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -536,10 +551,6 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  .page-nav {
-    display: flex;
-    align-items: center;
-  }
   .menu__link {
     padding: 32px 0;
     display: block;
@@ -562,9 +573,6 @@ body {
     line-height: 1.1428571429;
     letter-spacing: 0.02em;
     color: var(--secondary-font-color);
-  }
-  .menu__item:not(:first-child) {
-    padding-left: 50px;
   }
   .contact {
     display: flex;
@@ -725,6 +733,19 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .about__list {
+    width: calc((100% - 30px) / 2);
+  }
+  .about__advantage-title {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 1199px) {
   .work {
     display: none;
@@ -769,8 +790,8 @@ body {
   background: #f5f4fa;
 }
 
-.team__card:not(:last-child) {
-  margin-bottom: 30px;
+.team__menu {
+  text-align: center;
 }
 
 .team__card {
@@ -802,6 +823,22 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 767px) {
+  .team__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .team__card {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+}
 .social-menu {
   display: flex;
   justify-content: center;
@@ -836,26 +873,6 @@ body {
   padding-bottom: 60px;
 }
 
-.clients__list {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-@media screen and (max-width: 767px) {
-  .client-brand__link {
-    width: 210px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .clients {
-    max-width: 480px;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-}
 .client-brand__link {
   display: flex;
   align-items: center;
@@ -879,6 +896,37 @@ body {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .client-brand__link {
+    width: 210px;
+  }
+  .clients {
+    max-width: 480px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .clients__list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    padding-bottom: 30px;
+  }
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .client-brand__link {
+    margin-bottom: 30px;
+    width: 226px;
+  }
+}
 .contacts {
   padding: 60px 0;
   max-height: 603px;
@@ -894,6 +942,24 @@ body {
   align-items: center;
 }
 
+.social-footer {
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .social-footer {
+    margin: 0;
+  }
+  .contacts__address {
+    margin: 0;
+  }
+}
 .contacts-footer__logo {
   margin-bottom: 20px;
 }
@@ -946,11 +1012,6 @@ body {
 }
 .contacts-footer__phone:hover, .contacts-footer__phone:focus {
   color: var(--accent-color);
-}
-
-.social-footer {
-  margin: auto;
-  text-align: center;
 }
 
 .social-footer__title {

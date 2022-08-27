@@ -1,6 +1,13 @@
 .page-header-container.page-header--border {
     border-bottom: 1px solid #eeeeee;
 }
+.menu__item:not(:first-child) {
+    padding-left: 50px;
+}
+.page-nav {
+    display: flex;
+    align-items: center;
+}
 @media screen and (max-width: 767px) {
     .contact-list__phone-number {
         display: none;
@@ -26,6 +33,7 @@
         position: relative;
         display: flex;
         align-items: center;
+        margin: 0;
         padding-top: 16px;
         padding-bottom: 16px;
     }
@@ -66,10 +74,6 @@
         align-items: center;
         justify-content: space-between;
     }
-    .page-nav {
-        display: flex;
-        align-items: center;
-    }
 
     .menu__link {
         padding: 32px 0;
@@ -95,9 +99,6 @@
         color: var(--secondary-font-color);
     }
 
-    .menu__item:not(:first-child) {
-        padding-left: 50px;
-    }
     .contact {
         display: flex;
         flex-direction: column;
