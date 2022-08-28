@@ -208,15 +208,20 @@
         color: rgba(255, 255, 255, 0.6);
     }
 }
+@media screen and (max-width: 767px) {
+    .subscription-form__input {
+        width: 100%;
+    }
+}
 @media screen and (min-width: 1200px) {
     .subscription-form__input {
         min-width: 358px;
     }
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .subscription-form__input {
         margin: 0 auto 20px;
-        width: 450px;
+        min-width: 450px;
     }
 }
 
